@@ -1,0 +1,116 @@
+/* Modern CSS Reset */
+@font-face {
+    font-family: 'SFPro';
+    src: url('./assets/fonts/SFProText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'SFPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: rgba(245, 245, 245, 1);
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Убираем дефолтные стили кнопок */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Особенно важно для кнопок */
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Убираем синие подсветки на мобилках */
+input,
+textarea,
+button,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Для инпутов в мобильных браузерах */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Убираем дефолтные стили списков */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Убираем подчеркивание ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Улучшаем читаемость */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li {
+    text-wrap: pretty;
+}
+
+/* Фокус-индикаторы для доступности */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    border: 1px solid rgba(22, 119, 255, 1);
+    box-shadow: 0px 0px 0px 2px rgba(5, 145, 255, 0.1)
+}
