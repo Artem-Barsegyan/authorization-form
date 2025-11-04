@@ -85,7 +85,6 @@ const TwoFactorAuth = ({ onBack, onSuccess }) => {
         setTimeLeft(30);
         setError('');
         setHasError(false);
-        inputsRef.current[0].focus();
         getNewCode();
     }
 
