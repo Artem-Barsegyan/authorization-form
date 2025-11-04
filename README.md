@@ -1,16 +1,42 @@
-# React + Vite
+# 🔐 Authentication Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Современный интерфейс авторизации** с двухфакторной аутентификацией на React.
 
-Currently, two official plugins are available:
+## ✨ Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **"Многоэтапная авторизация"**: Вход → 2FA → Успех
+- **"Адаптивный дизайн"**: Полная поддержка мобильных устройств  
+- **"Современный стек"**: React 18 + React Query + CSS Modules
+- **"Пользовательский опыт"**: Интуитивные формы с валидацией
 
-## React Compiler
+## 🛠 Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **"Frontend"**: React 18, JSX
+- **"Стилизация"**: CSS Modules  
+- **"Состояние"**: React Query
+- **"Уведомления"**: Sonner
 
-## Expanding the ESLint configuration
+## 📱 Демо
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**"Тестовые данные"**:
+- **"Email"**: `test@gmail.com`
+- **"Пароль"**: `123456`
+
+### "Этапы авторизации":
+1. **"Форма входа"** - валидация email/пароля
+2. **"2FA"** - 6-значный код с таймером
+3. **"Успех"** - финальное подтверждение
+
+## 🎯 Ключевые возможности
+
+- **"Валидация в реальном времени"**
+- **"Автоматический переход между полями 2FA"** 
+- **"Таймер обратного отсчета"**
+- **"Полная адаптивность"** (до 294px)
+- **"Обработка ошибок"**
+
+## 🚀 Быстрый старт
+
+```bash
+npm install
+npm run dev
