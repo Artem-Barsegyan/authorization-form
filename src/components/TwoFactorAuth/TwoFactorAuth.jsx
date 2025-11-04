@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import backSvg from '../../assets/back.svg'
+import { toast } from 'sonner';
 
 import styles from './TwoFactorAuth.module.css'
 
@@ -15,7 +16,7 @@ const TwoFactorAuth = ({ onBack, onSuccess }) => {
     function getNewCode() {
         const randomCode = Math.floor(100000 + Math.random() * 900000).toString();
         setGeneratedCode(randomCode);
-        console.log('Сгенерированный код для 2FA:', randomCode);
+        toast.info(`Сгенерированный код для 2FA: ${randomCode}`, { duration: 4000 });
     }
 
     async function mockVerify2FA(code) {
