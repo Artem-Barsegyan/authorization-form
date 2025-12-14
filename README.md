@@ -1,4 +1,4 @@
-[🌐 **Рабочая версия**](https://verify-form.netlify.app/)
+[🌐 **Рабочая версия**](https://veriform.vercel.app/)
 
 # 🔐 Authentication Flow
 
